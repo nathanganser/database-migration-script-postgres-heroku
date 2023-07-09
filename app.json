@@ -3,5 +3,17 @@
   "description": "A simple script to do your database migration",
   "repository": "https://github.com/nathanganser/database-migration-script-postgres-heroku",
   "logo": "https://files.umso.co/lib_rsaIjJoefXOkuYaf/sdzg7bkox5itjisc.png",
-  "keywords": ["python", "postgres", "database", "heroku"]
+  "keywords": ["python", "postgres", "database", "heroku"],
+  "env": {
+    "SRC_URI": {
+      "description": "The URI of the source database. That's the existing database you want to migrate over."
+    },
+    "DEST_URI": {
+      "description": "The URI of the destination database. That's the newly created database."
+    }
 }
+"formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
