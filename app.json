@@ -1,0 +1,7 @@
+{
+  "name": "Postgres Database Migration Script",
+  "description": "A simple script to do your database migration",
+  "repository": "https://github.com/nathanganser/database-migration-script-postgres-heroku",
+  "logo": "https://files.umso.co/lib_rsaIjJoefXOkuYaf/sdzg7bkox5itjisc.png",
+  "keywords": ["python", "postgres", "database", "heroku"]
+}
