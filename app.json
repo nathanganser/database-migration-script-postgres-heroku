@@ -11,9 +11,10 @@
     "DEST_URI": {
       "description": "The URI of the destination database. That's the newly created database."
     }
-}
+},
 "formation": {
     "worker": {
       "quantity": 1,
       "size": "basic"
     }
+}
