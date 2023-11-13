@@ -3,6 +3,7 @@ from urllib.parse import urlparse
 import gzip
 import shutil
 import os
+import time
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -63,4 +64,6 @@ if __name__ == "__main__":
     # Dump source DB and restore to destination DB
     dump_db(src_db)
     restore_db(dest_db)
+    print("FINISHED")
+    time.sleep(10000)
 
